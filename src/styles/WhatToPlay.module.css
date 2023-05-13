@@ -1,0 +1,137 @@
+.root {
+    margin-bottom: 100px;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genreList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.genre {
+    font-weight: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gameCard {
+    position: relative;
+    width: 358px;
+    height: 487px;
+}
+
+.gameImg {
+    width: 100%;
+    height: 100%;
+}
+
+.gameCards {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.gameList {
+    height: 500px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    transition: 0.1s;
+    border-radius: 40px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.selected {
+    border-radius: 6px;
+    border: 3px #e32967 solid;
+    cursor: pointer;
+    width: 388px;
+    height: 517px;
+    transition: 0.2s;
+}
+
+.selected:hover {
+    filter: brightness(1.1);
+}
+
+.unselected {
+    filter: opacity(0.5);
+}
+
+@media (orientation: portrait) {
+    .content {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .genreList {
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+
+    .genreList {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 40px;
+    }
+
+    .gameList {
+        overflow:hidden;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        height: 50vh;
+    }
+    .arrow {
+        width: 100px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .unselected {
+        display: none;
+    }
+
+    .selected {
+        display: initial;
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .rightArrow {
+        
+        right: 20px;
+    }
+
+    .leftArrow {
+        left: 20px;
+    }
+
+    .genre {
+        font-size: 25px;
+    }
+}
+

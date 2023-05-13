@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 111px;
+    width: 100%;
+    background: radial-gradient(72.18% 43.92% at 50% 93.92%, #A40A79 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(37.71% 30.53% at 4.78% 4.31%, #008DF3 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(51.22% 43.71% at 98.22% 1.22%, #DC18C8 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, rgba(22, 43, 237, 0.5);
+    opacity: 0.5;
+    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
+}
+
+.items {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.items {
+    margin-right: 50px;
+}

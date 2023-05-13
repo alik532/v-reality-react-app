@@ -1,0 +1,82 @@
+.header {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.links {
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.bookButton {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px rgba(255, 255, 255, 0.748) solid;
+}
+
+.book > h4 {
+    padding: 10px;
+}
+
+.header a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.burger {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
+.modalLink {
+    height: 70px;
+}
+
+.mobileNav {
+    z-index: 2;
+    position: absolute;
+    background-color: rgb(6, 10, 48);
+    width: 100vw;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+@media (orientation: portrait) {
+    .links {
+        display: none;
+    }
+
+    .burger {
+        display: initial;
+    }
+}

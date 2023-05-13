@@ -1,0 +1,42 @@
+.img {
+    width: 50vw;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texts {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align:left;
+    margin-right: 30px;
+}
+
+.texts > h2 {
+    text-transform: uppercase;
+}
+
+@media (orientation: portrait) {
+    .content {
+        flex-direction: column;
+    }
+    .img {
+        width: 100%;
+    }
+    .texts {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+}

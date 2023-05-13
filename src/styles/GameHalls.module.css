@@ -1,0 +1,25 @@
+.root {
+    margin-top: 100px;
+    margin-bottom: 200px;
+} 
+
+.title {
+    text-transform: uppercase;
+}
+
+.list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+@media (orientation: portrait) {
+    .list {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
